@@ -1,3 +1,4 @@
+//grammer correction and beautyfi while printing in file made change on July 16
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
