@@ -75,9 +75,9 @@ int main()
         return 1;
     }
     
-    fprintf(file,"\n\n\t\t\t\t\tCAREWELL HOSPITAL\n\n");
-    fprintf(file,"\t\t\t\t\t    lokanthali,\n");
-    fprintf(file,"\t\t\t\t\t    bhaktapur\n");
+    fprintf(file,"\n\nCAREWELL HOSPITAL\n\n");
+    fprintf(file,"Lokanthali, Bhaktapur\n");
+    
     fprintf(file,"________________________________________________________________________\n\n");
     fprintf(file,"\n\t\t\t\t\t*****REPORT CARD***** \n\n");
     fprintf(file,"\n\nTEST PERFORMED: OCD (Obsessive Compulsive Disorder)");
@@ -206,9 +206,9 @@ else if(totalScore > 72 && totalScore < 96){
         fprintf(file,"3.Develop healthy strategies to manage stress and anxiety, such as exercise, mindfulness, or hobbies\n");
 	}
 	printf("\n\n**Note that these recommendations should be customized to fit each person's requirements and circumstances. \nBased on a comprehensive evaluation, a licensed mental health professional can offer tailored recommendations and advice.**\n");
-fprintf(file,"Note : **Note that these recommendations should be customized to fit each person's requirements and circumstances. \n\nBased on a comprehensive evaluation, a licensed mental health professional can offer tailored recommendations and advice.**\n");
-    printf("\n\n\t\t\t\tHave a good day");
-    fprintf(file,"\n\n\t\t\t\tHave a good day");
+fprintf(file,"Note : **Note that these recommendations should be customized to fit each person's requirements and circumstances. Based on a comprehensive evaluation, a licensed mental health professional can offer tailored recommendations and advice.**\n");
+    printf("\n\nHave a good day!");
+    fprintf(file,"\n\nHave a good day!");
 	
     // Close the file
     fclose(file);
