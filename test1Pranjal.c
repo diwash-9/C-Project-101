@@ -71,7 +71,7 @@ int main()
     fprintf(file, "<html>\n<head>\n<title>%s - OCD Test Report</title>\n</head>\n<body>\n", name);
 
     fprintf(file, "<h1 style=\"text-align: center;\">CAREWELL HOSPITAL</h1>\n");
-    fprintf(file, "<p style=\"text-align: center;\">lokanthali, bhaktapur</p>\n");
+    fprintf(file, "<p style=\"text-align: center;\">Lokanthali, Bhaktapur</p>\n");
     fprintf(file, "<hr>\n");
     fprintf(file, "<h2 style=\"text-align: center;\">REPORT CARD</h2>\n");
 
@@ -100,8 +100,8 @@ int main()
     int previousResponse = -1; // Initialize previous response with an invalid value
 
     fprintf(file, "<h3>NAME: %s</h3>\n", name);
-
-    for (int i = 0; i < numQuestions; i++)
+    int i;
+    for ( i = 0; i < numQuestions; i++)
     {
         int currentResponse = askQuestion(questions[i]);
 
