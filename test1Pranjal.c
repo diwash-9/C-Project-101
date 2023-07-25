@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-
+//structure defination
 typedef struct
 {
     char question[200];
@@ -27,15 +27,15 @@ int askQuestion(Question q)
     return response;
 }
 
-int adaptWeight(int currentResponse, int previousResponse, int weight)
-{
-    // Adjust weight based on change in response
-    if (currentResponse != previousResponse)
-    {
-        weight += 1; // Increase weight by 1 for adaptive scoring
-    }
-    return weight;
-}
+// int adaptWeight(int currentResponse, int previousResponse, int weight)
+// {
+//     // Adjust weight based on change in response
+//     if (currentResponse != previousResponse)
+//     {
+//         weight += 1; // Increase weight by 1 for adaptive scoring
+//     }
+//     return weight;
+// }
 
 int main()
 {
@@ -80,7 +80,7 @@ int main()
     fprintf(file, "<p>TIME: %s</p>\n", __TIME__);
 
     printf("\nLets start-- \n\n");
-    
+    //questions 
     Question questions[] = {
         {"Q1) I often have repetitive and intrusive thoughts that I find difficult to control.", 2},
         {"Q2) I feel a strong urge to perform certain actions or rituals repeatedly.", 3},
@@ -105,7 +105,7 @@ int main()
     {
         int currentResponse = askQuestion(questions[i]);
 
-        questions[i].weight = adaptWeight(currentResponse, previousResponse, questions[i].weight);
+        // questions[i].weight = adaptWeight(currentResponse, previousResponse, questions[i].weight);
 
         totalScore += currentResponse * questions[i].weight;
 
