@@ -52,7 +52,7 @@ int main()
     char name[100];
     printf("Enter your first name : ");
     scanf("%s", name);
-    sprintf(filename, "%s.doc", name);
+    sprintf(filename, "%s.html", name);
     printf("\nLets start-- \n\n");
     system("pause");
     printf("\nLets start-- \n\n");
