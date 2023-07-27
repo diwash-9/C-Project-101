@@ -110,9 +110,9 @@ int main()
 
         previousResponse = currentResponse;
 
-        // Write question and response to the file
-//        fprintf(file, "<p>%s</p>\n", questions[i].question);
-//        fprintf(file, "<p>Response: %d</p>\n", currentResponse);
+    // Write question and response to the file
+    //fprintf(file, "<p>%s</p>\n", questions[i].question);
+    //fprintf(file, "<p>Response: %d</p>\n", currentResponse);
     }
     printf("Score level: \n 0-24 --Zero to No OCD \n 24-48 --Mild Symptoms of OCD \n 48-72 --Moderate Symptoms of OCD \n 72-96 --Severe Symptoms of OCD \n >96 --Extreme Symptoms of OCD \n\n");
     printf("Your score =  %d\n\n", totalScore);
@@ -211,9 +211,9 @@ int main()
         fprintf(file, "</ol>\n");
     }
 
-    fprintf(file, "<p>**Note that these recommendations should be customized to fit each person's requirements and circumstances. \nBased on a comprehensive evaluation, a licensed mental health professional can offer tailored recommendations and advice.**</p>\n");
+    fprintf(file, "<p><strong>**Note that these recommendations should be customized to fit each person's requirements and circumstances. \nBased on a comprehensive evaluation, a licensed mental health professional can offer tailored recommendations and advice.**</strong></p>\n");
 
-    fprintf(file, "<p text-align: center>Have a good day!</p>\n");
+    fprintf(file, "<p style=\"text-align: center;\">Have a good day!</p>\n");
     fprintf(file, "</body>\n</html>");
 
     // Close the file
